@@ -1,0 +1,10 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.0.1
+Date: 2020-12-24
+  Features:
+    - Initial release.
+    - Detects when a blueprint is created, selected from inventory, selected from a blueprint book in inventory, a cut or copy selection is made, or a paste selection from the clipboard is made.
+    - If the blueprint contains a Spaceship Clamp entity, this mod sets the blueprint grid snapping parameters so that at least one clamp will always be placed on the rail grid.  
+    - If this results in a different clamp being placed off the rail grid, a warning message is printed.
+    - If the blueprint contains a Spaceship Console output entity, which are not normally buildable, it will be removed from the blueprint so that unattached entities are not created in cheat mode.
+    - Settings are available to disable either of these behaviors.

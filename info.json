@@ -7,5 +7,5 @@
   "homepage": "",
   "description": "Fix blueprint snapping behavior with spaceship clamps.",
   "factorio_version": "1.1",
-  "dependencies": ["base"]
+  "dependencies": ["base", "space-exploration"]
 }
