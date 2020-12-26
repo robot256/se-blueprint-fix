@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.3
+Date: 2020-12-26
+  Bugfixes:
+    - Fixed crash when picking up empty blueprint book.
+---------------------------------------------------------------------------------------------------
+Version: 0.0.2
+Date: 2020-12-25
+  Changes:
+    - Disable spaceship output interference by default because SE will soon support saving their wires in blueprints and I don't want to break that.
+---------------------------------------------------------------------------------------------------
 Version: 0.0.1
 Date: 2020-12-24
   Features:

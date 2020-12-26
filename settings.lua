@@ -12,7 +12,7 @@ data:extend{
     name = "se-blueprint-fix-exclude-console-output",
     order = "ab",
     setting_type = "runtime-global",
-    default_value = true,
+    default_value = false,
   },
   {
     type = "bool-setting",
