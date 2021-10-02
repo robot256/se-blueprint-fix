@@ -140,9 +140,16 @@ script.on_event( defines.events.on_player_cursor_stack_changed,
       elseif item.is_blueprint_book then
         local active_index = item.active_index
         if active_index then
-          local blueprint = item.get_inventory(defines.inventory.item_main)[active_index]
-          if DEBUG_PRINT then game.print("on_player_cursor_stack_changed is processing player.cursor_stack["..active_index.."]") end
-          updateBlueprint(blueprint)
+          if DEBUG_PRINT then game.print("on_player_cursor_stack_changed is processing blueprint book in cursor") end
+          local book_inventory = item.get_inventory(defines.inventory.item_main)
+          if DEBUG_PRINT then game.print("on_player_cursor_stack_changed is looking for stack #"..active_index.." in array of "..#book_inventory.." items") end
+          if active_index <= #book_inventory then
+            local blueprint = book_inventory[active_index]
+            if blueprint and blueprint.valid_for_read and blueprint.is_blueprint then
+              if DEBUG_PRINT then game.print("on_player_cursor_stack_changed is processing player.cursor_stack["..active_index.."]") end
+              updateBlueprint(blueprint)
+            end
+          end
         end
       end
     end

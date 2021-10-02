@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.4
+Date: 2021-08-14
+  Bugfixes:
+    - Fixed crash when picking up blueprint book from library after deleting or moving the active blueprint.
+---------------------------------------------------------------------------------------------------
 Version: 0.0.3
 Date: 2020-12-26
   Bugfixes:
